@@ -15,3 +15,6 @@ COPY . .
 
 # Expõe a porta 8000 para o mundo exterior
 EXPOSE 8000
+
+
+CMD uvicorn app:app --host 0.0.0.0 --port $PORT
